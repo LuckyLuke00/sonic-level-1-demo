@@ -4,17 +4,17 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
-    <IncludePath>$(SolutionDir)Libraries\SDL2-2.26.1\include;$(SolutionDir)Libraries\SDL2_ttf-2.20.1\include;$(SolutionDir)Libraries\SDL2_mixer-2.6.2\include;$(SolutionDir)Libraries\SDL2_image-2.6.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Libraries\SDL2-2.26.1\lib\x86;$(SolutionDir)Libraries\SDL2_ttf-2.20.1\lib\x86;$(SolutionDir)Libraries\SDL2_mixer-2.6.2\lib\x86;$(SolutionDir)Libraries\SDL2_image-2.6.2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\Libraries\SDL2-2.26.1\include;..\Libraries\SDL2_ttf-2.20.1\include;..\Libraries\SDL2_mixer-2.6.2\include;..\Libraries\SDL2_image-2.6.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Libraries\SDL2-2.26.1\lib\x86;..\Libraries\SDL2_ttf-2.20.1\lib\x86;..\Libraries\SDL2_mixer-2.6.2\lib\x86;..\Libraries\SDL2_image-2.6.2\lib\x86;$(LibraryPath)</LibraryPath>
     <_PropertySheetDisplayName>SDLWin32</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PostBuildEvent>
       <Command>
-      xcopy "$(SolutionDir)Libraries\SDL2-2.26.1\lib\x86\*.DLL" "$(OutDir)" /y /D 
-      xcopy "$(SolutionDir)Libraries\SDL2_image-2.6.2\lib\x86\*.DLL" "$(OutDir)" /y /D 
-      xcopy "$(SolutionDir)Libraries\SDL2_mixer-2.6.2\lib\x86\*.DLL" "$(OutDir)" /y /D 
-      xcopy "$(SolutionDir)Libraries\SDL2_ttf-2.20.1\lib\x86\*.DLL" "$(OutDir)" /y /D 
+      xcopy "..\Libraries\SDL2-2.26.1\lib\x86\*.DLL" "$(OutDir)" /y /D 
+      xcopy "..\Libraries\SDL2_image-2.6.2\lib\x86\*.DLL" "$(OutDir)" /y /D 
+      xcopy "..\Libraries\SDL2_mixer-2.6.2\lib\x86\*.DLL" "$(OutDir)" /y /D 
+      xcopy "..\Libraries\SDL2_ttf-2.20.1\lib\x86\*.DLL" "$(OutDir)" /y /D 
       </Command>
       <Message>COPY THE DLL FILES</Message>
     </PostBuildEvent>

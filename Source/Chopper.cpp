@@ -3,11 +3,11 @@
 #include "utils.h"
 
 Chopper::Chopper(const std::string& chopperPath, const std::vector<std::vector<Point2f>>* levelVerticies, Player* player, const Camera* camera)
-	: Enemy(chopperPath, "./Resources/Sprites/Enemies/Chopper_Texture.png", Vector2f{ 30.f, 32.f }, player, camera)
+	: Enemy(chopperPath, "../Resources/Sprites/Enemies/Chopper_Texture.png", Vector2f{ 30.f, 32.f }, player, camera)
 	, m_ExplosionSpriteSize{ 54.f }
 	, m_LevelVerticies{ levelVerticies }
 	, m_Gravity{ 0.09375f }
-	, m_pExplosionTexture{ new Texture{"./Resources/Sprites/Enemies/Enemy_Explosion_Texture.png" } }
+	, m_pExplosionTexture{ new Texture{"../Resources/Sprites/Enemies/Enemy_Explosion_Texture.png" } }
 	, m_DeltaTime{ 0.f }
 {
 	Init();

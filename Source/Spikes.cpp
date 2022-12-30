@@ -6,10 +6,10 @@
 #include "utils.h"
 
 Spikes::Spikes(const std::string& BigSpikesLocationFilePath, const std::string& SmallSpikesLocationFilePath, Player* player)
-	: GameObject{ BigSpikesLocationFilePath, "./Resources/Sprites/Game Objects/Big_Spikes_Texture.png", Vector2f{ 10.0f, 32.0f }, 10.0f, 32.0f }
-	, m_SmallSpikes{ SmallSpikesLocationFilePath, "./Resources/Sprites/Game Objects/Small_Spikes_Texture.png", Vector2f{ 6.0f, 32.0f }, 6.0f, 32.0f }
+	: GameObject{ BigSpikesLocationFilePath, "../Resources/Sprites/Game Objects/Big_Spikes_Texture.png", Vector2f{ 10.0f, 32.0f }, 10.0f, 32.0f }
+	, m_SmallSpikes{ SmallSpikesLocationFilePath, "../Resources/Sprites/Game Objects/Small_Spikes_Texture.png", Vector2f{ 6.0f, 32.0f }, 6.0f, 32.0f }
 	, m_pPlayer{ player }
-	, m_SpikeDeathSound{ new SoundEffect{ "./Resources/Sound Effects/Spike.wav" } }
+	, m_SpikeDeathSound{ new SoundEffect{ "../Resources/Sound Effects/Spike.wav" } }
 {
 	m_SpikeDeathSound->SetVolume(Player::m_Volume);
 }

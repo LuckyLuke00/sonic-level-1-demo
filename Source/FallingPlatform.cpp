@@ -5,7 +5,7 @@
 #include "utils.h"
 
 FallingPlatform::FallingPlatform(const std::string& startPosPath, Player* player)
-	: GameObject{ startPosPath, "./Resources/Sprites/Game Objects/Platform_Texture.png", Vector2f{ 64.0f, 29.0f }, 64.0f, 29.0f }
+	: GameObject{ startPosPath, "../Resources/Sprites/Game Objects/Platform_Texture.png", Vector2f{ 64.0f, 29.0f }, 64.0f, 29.0f }
 	, m_FallingPlatformBottomPosY{ 0.0f }
 	, m_FallingSpeed{ 7.0f }
 	, m_FallTime{ 0.5f }

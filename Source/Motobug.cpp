@@ -7,7 +7,7 @@
 #include <sstream>
 
 Motobug::Motobug(const std::string& motobugPath, const std::string& minMaxPosPath, const std::vector<std::vector<Point2f>>* levelVerticies, Player* player, const Camera* camera)
-	: Enemy(motobugPath, "./Resources/Sprites/Enemies/Motobug_Texture.png", Vector2f{ 39.f, 29.f }, player, camera)
+	: Enemy(motobugPath, "../Resources/Sprites/Enemies/Motobug_Texture.png", Vector2f{ 39.f, 29.f }, player, camera)
 	, m_IsOnGround{}
 	, m_ExplosionSpriteSize{ 54.f }
 	, m_MovingLeft{}
@@ -16,7 +16,7 @@ Motobug::Motobug(const std::string& motobugPath, const std::string& minMaxPosPat
 	, m_Gravity{ 0.21875f }
 	, m_MinMaxPosPath{ minMaxPosPath }
 	, m_MinMaxPositions{}
-	, m_pExplosionTexture{ new Texture{"./Resources/Sprites/Enemies/Enemy_Explosion_Texture.png" } }
+	, m_pExplosionTexture{ new Texture{"../Resources/Sprites/Enemies/Enemy_Explosion_Texture.png" } }
 {
 	Init();
 }

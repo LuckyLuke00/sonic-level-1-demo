@@ -4,7 +4,7 @@
 Enemy::Enemy(const std::string& startPosPath, const std::string& texturePath, const Vector2f& hitBoxSize, Player* player, const Camera* camera)
 	: GameObject{ startPosPath, texturePath, hitBoxSize, hitBoxSize.x, hitBoxSize.y }
 	, m_pPlayer{ player }
-	, m_pDestroyedSound{ new SoundEffect{ "./Resources/Sound Effects/Destroy.wav" } }
+	, m_pDestroyedSound{ new SoundEffect{ "../Resources/Sound Effects/Destroy.wav" } }
 	, m_EnemyCenters{}
 	, m_Velocty{}
 	, m_CameraRect{ camera->GetCameraRect() }

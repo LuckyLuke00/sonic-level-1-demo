@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 
 	Core* pCore{ new Core{ Window{ "Sonic the Hedgehog - Kinoo, Lucas - 1DAE21", 424.f * 3, 240.f * 3, false } } };
 
-	SDL_Surface* icon = IMG_Load("./Resources/Icon.png");
+	SDL_Surface* icon = IMG_Load("../Resources/Icon.png");
 	SDL_SetWindowIcon(pCore->GetWindow(), icon);
 	SDL_FreeSurface(icon);
 
