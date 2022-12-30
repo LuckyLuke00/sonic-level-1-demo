@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Framework Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Game Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Game Files\Game Objects">
+      <UniqueIdentifier>{e1cdad05-efdb-42d8-8a9b-0bd14b012f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\User Interface">
+      <UniqueIdentifier>{ee5a61a0-2a25-488e-b229-735a0ddd890d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Game Objects\Inanimate Objects">
+      <UniqueIdentifier>{1dc9b56c-c1d3-48f0-ae61-3928ce1ffc3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Files\Game Objects\Enemy">
+      <UniqueIdentifier>{8a29eec9-441b-4fde-a01d-f3b831c7e9d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2f.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix2x3.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffect.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundStream.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SVGParser.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Framework Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Game Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Game Files\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberManager.cpp">
+      <Filter>Game Files\User Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Checkpoint.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="FallingPlatform.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBox.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Mayflower.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Rings.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Spikes.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Springs.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sunflower.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Waterfall.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingPlatform.cpp">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Game Files\Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Motobug.cpp">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Chopper.cpp">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2x3.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffect.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundStream.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SVGParser.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2f.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Framework Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Game Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Game Files\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberManager.h">
+      <Filter>Game Files\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Checkpoint.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="FallingPlatform.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBox.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Mayflower.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Rings.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Spikes.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Springs.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sunflower.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Waterfall.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingPlatform.h">
+      <Filter>Game Files\Game Objects\Inanimate Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Game Files\Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Motobug.h">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Chopper.h">
+      <Filter>Game Files\Game Objects\Enemy</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
