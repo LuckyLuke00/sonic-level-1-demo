@@ -4,21 +4,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <ExtensionsToDeleteOnClean>*.dll;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
-    <IncludePath>$(SolutionDir)Libraries\SDL2-2.0.10\include;$(SolutionDir)Libraries\SDL2_ttf-2.0.15\include;$(SolutionDir)Libraries\SDL2_mixer-2.0.4\include;$(SolutionDir)Libraries\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Libraries\SDL2-2.0.10\lib\x64;$(SolutionDir)Libraries\SDL2_ttf-2.0.15\lib\x64;$(SolutionDir)Libraries\SDL2_mixer-2.0.4\lib\x64;$(SolutionDir)Libraries\SDL2_image-2.0.5\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Libraries\SDL2-2.26.1\include;$(SolutionDir)Libraries\SDL2_ttf-2.20.1\include;$(SolutionDir)Libraries\SDL2_mixer-2.6.2\include;$(SolutionDir)Libraries\SDL2_image-2.6.2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\SDL2-2.26.1\lib\x64;$(SolutionDir)Libraries\SDL2_ttf-2.20.1\lib\x64;$(SolutionDir)Libraries\SDL2_mixer-2.6.2\lib\x64;$(SolutionDir)Libraries\SDL2_image-2.6.2\lib\x64;$(LibraryPath)</LibraryPath>
     <_PropertySheetDisplayName>SDLx64</_PropertySheetDisplayName>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PostBuildEvent>
-      <Command>xcopy "$(SolutionDir)Libraries\SDL2-2.0.10\lib\x64\*.DLL" "$(OutDir)" /y /D 
-xcopy "$(SolutionDir)Libraries\SDL2_image-2.0.5\lib\x64\*.DLL" "$(OutDir)" /y /D 
-xcopy "$(SolutionDir)Libraries\SDL2_mixer-2.0.4\lib\x64\*.DLL" "$(OutDir)" /y /D 
-xcopy "$(SolutionDir)Libraries\SDL2_ttf-2.0.15\lib\x64\*.DLL" "$(OutDir)" /y /D 
-</Command>
+      <Command>
+      xcopy "$(SolutionDir)Libraries\SDL2-2.26.1\lib\x64\*.DLL" "$(OutDir)" /y /D 
+      xcopy "$(SolutionDir)Libraries\SDL2_image-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D 
+      xcopy "$(SolutionDir)Libraries\SDL2_mixer-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D 
+      xcopy "$(SolutionDir)Libraries\SDL2_ttf-2.20.1\lib\x64\*.DLL" "$(OutDir)" /y /D 
+      </Command>
       <Message>COPY THE DLL FILES</Message>
     </PostBuildEvent>
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <ClCompile>
       <TreatWarningAsError>true</TreatWarningAsError>
