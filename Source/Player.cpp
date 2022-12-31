@@ -29,10 +29,10 @@ Player::Player(const Point2f& startPos, const float& fpsTarget)
 	, m_AirFactor{ 1.25f }
 	, m_DeltaTime{}
 	, m_FpsTarget{ fpsTarget }
-	, m_pDeathSound{ new SoundEffect{"../Resources/Sound Effects/Death.wav"} }
-	, m_pExtraLifeSound{ new SoundEffect{ "../Resources/Sound Effects/1-Up.flac"} }
-	, m_pGameOverSound{ new SoundEffect{ "../Resources/Sound Effects/Game_Over.flac" } }
-	, m_pInvincibilitySound{ new SoundEffect{ "../Resources/Sound Effects/Invincibility.mp3" } }
+	, m_pDeathSound{ new SoundEffect{"../Resources/Sound Effects/Hurt.wav"} }
+	, m_pExtraLifeSound{ new SoundEffect{ "../Resources/Soundtrack/1-Up.ogg"} }
+	, m_pGameOverSound{ new SoundEffect{ "../Resources/Soundtrack/Game-Over.ogg" } }
+	, m_pInvincibilitySound{ new SoundEffect{ "../Resources/Soundtrack/Invincibility.ogg" } }
 	, m_pJumpSound{ new SoundEffect{ "../Resources/Sound Effects/Jump.wav" } }
 	, m_PlayerSprite{ m_pPlayerTexture, 48.0f, 48.0f, startPos }
 	, m_InvincibilitySprite{ m_pInvincibilityTexture, 48.0f, 48.0f }

@@ -17,8 +17,8 @@ Game::~Game()
 
 void Game::Initialize()
 {
-	DisplayMenuTitle();
-	DisplayMenu();
+	//DisplayMenuTitle();
+	//DisplayMenu();
 }
 
 void Game::Cleanup()
