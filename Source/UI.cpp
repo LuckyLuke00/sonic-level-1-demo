@@ -4,8 +4,8 @@
 #include "Texture.h"
 
 UI::UI(const float& windowWidth, const float& windowHeight)
-	: m_HUDTexture{ new Texture{"../Resources/UI/UI_Overlay.png"} }
-	, m_RingFlashTexture{ new Texture{"../Resources/UI/UI_Rings_Overlay.png"} }
+	: m_HUDTexture{ new Texture{"./Resources/UI/UI_Overlay.png"} }
+	, m_RingFlashTexture{ new Texture{"./Resources/UI/UI_Rings_Overlay.png"} }
 	, m_Scale{ windowHeight / m_HUDTexture->GetHeight() }
 	, m_Time{ 0 }
 	, m_TimeMiliSec{ 0 }

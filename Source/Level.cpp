@@ -9,8 +9,8 @@ Level::Level(const Window& window, const float& fpsTarget)
 	, m_WindowHeight{ window.height }
 	, m_WindowWidth{ window.width }
 	, m_StartPos{ 84.0f, 318.0f }
-	, m_GameObjectPath{ "../Resources/Sprites/Game Objects/Location Data/" }
-	, m_TexturesPath{ "../Resources/Sprites/Level/" }
+	, m_GameObjectPath{ "./Resources/Sprites/Game Objects/Location Data/" }
+	, m_TexturesPath{ "./Resources/Sprites/Level/" }
 	, m_pBackgroundTexture{ new Texture{ m_TexturesPath + "GHZ_Sky_Texture.png" } }
 	, m_pBottomOceanTexture{ new Texture{ m_TexturesPath + "GHZ_Ocean_Bottom_Texture.png" } }
 	, m_pLevelTexture{ new Texture{ m_TexturesPath + "GHZ_Level_Texture.png" } }
@@ -32,12 +32,12 @@ Level::Level(const Window& window, const float& fpsTarget)
 	, m_CheckpointLocations{ Point2f{4564.0f, 704.0f}, Point2f{6508.0f, 377.0f} }
 	, m_Checkpoints{ m_CheckpointLocations, &m_Player }
 	, m_Camera{ window, m_Scale, m_Player.m_PlayerCenter,std::vector<Point2f>{Point2f{0.0f, 276.0f}, Point2f{5888.0f, 0.0f}, Point2f{m_pLevelTexture->GetWidth(), 0.0f}} }
-	, m_pLevelSong{ new SoundStream{"../Resources/Soundtrack/Green-Hill-Zone-Original.ogg"} }
-	, m_Motobugs{ "../Resources/Sprites/Enemies/Location Data/GHZ_Motobug_Locations.txt", "../Resources/Sprites/Enemies/Location Data/GHZ_Motobug_MinMax_Locations.txt", &m_LevelVertices, &m_Player, &m_Camera }
-	, m_Chopper{ "../Resources/Sprites/Enemies/Location Data/GHZ_Chopper_Locations.txt", &m_LevelVertices, &m_Player, &m_Camera }
+	, m_pLevelSong{ new SoundStream{"./Resources/Soundtrack/Green-Hill-Zone-Original.ogg"} }
+	, m_Motobugs{ "./Resources/Sprites/Enemies/Location Data/GHZ_Motobug_Locations.txt", "./Resources/Sprites/Enemies/Location Data/GHZ_Motobug_MinMax_Locations.txt", &m_LevelVertices, &m_Player, &m_Camera }
+	, m_Chopper{ "./Resources/Sprites/Enemies/Location Data/GHZ_Chopper_Locations.txt", &m_LevelVertices, &m_Player, &m_Camera }
 
 {
-	SVGParser::GetVerticesFromSvgFile("../Resources/Sprites/Level/GHZ_Level_Collision.svg", m_LevelVertices);
+	SVGParser::GetVerticesFromSvgFile("./Resources/Sprites/Level/GHZ_Level_Collision.svg", m_LevelVertices);
 	InitBackgroundSprites();
 	InitItemBoxes();
 

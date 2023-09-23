@@ -6,12 +6,12 @@
 #include "utils.h"
 
 Rings::Rings(const std::string& locationFilePath, Player* player)
-	: GameObject{ locationFilePath, "../Resources/Sprites/Game Objects/Ring_Texture.png", Vector2f{ 13.0f, 13.0f}, 16.0f, 16.f }
+	: GameObject{ locationFilePath, "./Resources/Sprites/Game Objects/Ring_Texture.png", Vector2f{ 13.0f, 13.0f}, 16.0f, 16.f }
 	, m_HasBeenAwarded{ false }
 	, m_RingBonusAmount{ 100 }
 	, m_pPlayer{ player }
-	, m_pRingLossSound{ new SoundEffect{ "../Resources/Sound Effects/LoseRings.wav"} }
-	, m_pRingSound{ new SoundEffect{ "../Resources/Sound Effects/Ring.wav" } }
+	, m_pRingLossSound{ new SoundEffect{ "./Resources/Sound Effects/LoseRings.wav"} }
+	, m_pRingSound{ new SoundEffect{ "./Resources/Sound Effects/Ring.wav" } }
 {
 	for (const auto& i : m_pSprites) i->ChangeSprite(1, 1, 1, 16, 32); // Set animation of rings
 	m_pRingSound->SetVolume(Player::m_Volume - 25);

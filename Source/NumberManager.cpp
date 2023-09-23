@@ -13,7 +13,7 @@ NumberManager::NumberManager(const Point2f& numberStartPos, const float& scale, 
 	, m_NumberSize{ SizeOfInt(currentNumber) }
 	, m_NumbersToDraw{ numbersToDraw }
 	, m_NumberStartPos{ numberStartPos }
-	, m_pNumbersTexture{ new Texture{ "../Resources/UI/UI_Numbers.png" } }
+	, m_pNumbersTexture{ new Texture{ "./Resources/UI/UI_Numbers.png" } }
 	, m_NumberSprites{ new SpriteManager{ m_pNumbersTexture, m_SpriteWidth, m_SpriteHeight, numberStartPos, m_Scale } }
 {
 	if (m_NumbersToDraw + 1 != m_NumberSize)

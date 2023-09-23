@@ -10,11 +10,11 @@
 #include "Rings.h"
 
 ItemBox::ItemBox(const std::string& ItemBoxPath, Player* player, Rings* rings)
-	: GameObject(ItemBoxPath, "../Resources/Sprites/Game Objects/Item Box/Item_Box_Texture.png", Vector2f{ 32.0f, 32.0f }, 32.0f, 32.0f)
+	: GameObject(ItemBoxPath, "./Resources/Sprites/Game Objects/Item Box/Item_Box_Texture.png", Vector2f{ 32.0f, 32.0f }, 32.0f, 32.0f)
 	, m_pPlayer{ player }
-	, m_pBoxDestroyedSound{ new SoundEffect{ "../Resources/Sound Effects/Destroy.wav" } }
-	, m_pExplosionTexture{ new Texture{"../Resources/Sprites/Game Objects/Item Box/Item_Box_Explosion.png" } }
-	, m_pItemBoxItemsTexture{ new Texture{ "../Resources/Sprites/Game Objects/Item Box/Item_Box_Items.png" } }
+	, m_pBoxDestroyedSound{ new SoundEffect{ "./Resources/Sound Effects/Destroy.wav" } }
+	, m_pExplosionTexture{ new Texture{"./Resources/Sprites/Game Objects/Item Box/Item_Box_Explosion.png" } }
+	, m_pItemBoxItemsTexture{ new Texture{ "./Resources/Sprites/Game Objects/Item Box/Item_Box_Items.png" } }
 	, m_pRings{ rings }
 {
 	for (size_t i{ 0 }; i < m_pSprites.size(); ++i)

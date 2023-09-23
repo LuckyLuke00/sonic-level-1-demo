@@ -24,16 +24,16 @@ Player::Player(const Point2f& startPos, const float& fpsTarget)
 	, m_PlayerShape{ 0.0f, 0.0f, 19.0f, 39.0f }
 	, m_HitBoxOffset{ 16.0f, 3.0f }
 	, m_Velocity{ 0.0f, 0.0f }
-	, m_pPlayerTexture{ new Texture{"../Resources/Sprites/Entities/Sonic.png"} }
-	, m_pInvincibilityTexture{ new Texture{ "../Resources/Sprites/Entities/Invincibility_Sparkles.png" } }
+	, m_pPlayerTexture{ new Texture{"./Resources/Sprites/Entities/Sonic.png"} }
+	, m_pInvincibilityTexture{ new Texture{ "./Resources/Sprites/Entities/Invincibility_Sparkles.png" } }
 	, m_AirFactor{ 1.25f }
 	, m_DeltaTime{}
 	, m_FpsTarget{ fpsTarget }
-	, m_pDeathSound{ new SoundEffect{"../Resources/Sound Effects/Hurt.wav"} }
-	, m_pExtraLifeSound{ new SoundEffect{ "../Resources/Soundtrack/1-Up.ogg"} }
-	, m_pGameOverSound{ new SoundEffect{ "../Resources/Soundtrack/Game-Over.ogg" } }
-	, m_pInvincibilitySound{ new SoundEffect{ "../Resources/Soundtrack/Invincibility.ogg" } }
-	, m_pJumpSound{ new SoundEffect{ "../Resources/Sound Effects/Jump.wav" } }
+	, m_pDeathSound{ new SoundEffect{"./Resources/Sound Effects/Hurt.wav"} }
+	, m_pExtraLifeSound{ new SoundEffect{ "./Resources/Soundtrack/1-Up.ogg"} }
+	, m_pGameOverSound{ new SoundEffect{ "./Resources/Soundtrack/Game-Over.ogg" } }
+	, m_pInvincibilitySound{ new SoundEffect{ "./Resources/Soundtrack/Invincibility.ogg" } }
+	, m_pJumpSound{ new SoundEffect{ "./Resources/Sound Effects/Jump.wav" } }
 	, m_PlayerSprite{ m_pPlayerTexture, 48.0f, 48.0f, startPos }
 	, m_InvincibilitySprite{ m_pInvincibilityTexture, 48.0f, 48.0f }
 {

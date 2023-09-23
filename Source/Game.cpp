@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "Game.h"
+#include <iostream>
+#include <filesystem>
 
 Game::Game(const Window& window)
 	: m_Window{ window }

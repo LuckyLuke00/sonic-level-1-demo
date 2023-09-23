@@ -6,9 +6,9 @@
 #include "utils.h"
 
 Checkpoint::Checkpoint(const std::vector<Point2f>& locations, Player* player)
-	: GameObject{ locations, "../Resources/Sprites/Game Objects/Checkpoint_Texture.png", Vector2f{ 16.0f, 64.0f }, 40.0f, 64.0f }
+	: GameObject{ locations, "./Resources/Sprites/Game Objects/Checkpoint_Texture.png", Vector2f{ 16.0f, 64.0f }, 40.0f, 64.0f }
 	, m_Player{ player }
-	, m_pCheckpointSound{ new SoundEffect{"../Resources/Sound Effects/StarPost.wav"} }
+	, m_pCheckpointSound{ new SoundEffect{"./Resources/Sound Effects/StarPost.wav"} }
 {
 	for (size_t i{ 0 }; i < m_pSprites.size(); ++i) m_CheckpointHit.push_back(false);
 }

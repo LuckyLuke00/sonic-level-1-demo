@@ -8,7 +8,7 @@
 #include "utils.h"
 
 MovingPlatform::MovingPlatform(const std::string& startPosPath, const std::string& minMaxPosPath, Player* player)
-	: GameObject{ startPosPath, "../Resources/Sprites/Game Objects/Platform_Texture.png", Vector2f{ 64.0f, 29.0f }, 64.0f, 29.0f }
+	: GameObject{ startPosPath, "./Resources/Sprites/Game Objects/Platform_Texture.png", Vector2f{ 64.0f, 29.0f }, 64.0f, 29.0f }
 	, m_Speed{ 1.0f }
 	, m_pPlayer{ player }
 {

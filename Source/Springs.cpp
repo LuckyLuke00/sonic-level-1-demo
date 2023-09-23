@@ -6,9 +6,9 @@
 #include "utils.h"
 
 Springs::Springs(const std::string& SpringLocationsPath, Player* player)
-	: GameObject{ SpringLocationsPath, "../Resources/Sprites/Game Objects/Spring_Yellow_Texture.png", Vector2f{ 32.0f, 16.0f }, 32.0f, 32.0f }
+	: GameObject{ SpringLocationsPath, "./Resources/Sprites/Game Objects/Spring_Yellow_Texture.png", Vector2f{ 32.0f, 16.0f }, 32.0f, 32.0f }
 	, m_pPlayer{ player }
-	, m_pSpringSound{ new SoundEffect{"../Resources/Sound Effects/Spring.wav" } }
+	, m_pSpringSound{ new SoundEffect{"./Resources/Sound Effects/Spring.wav" } }
 {
 	m_pSpringSound->SetVolume(Player::m_Volume);
 }

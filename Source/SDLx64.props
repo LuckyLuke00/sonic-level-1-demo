@@ -10,12 +10,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PostBuildEvent>
-      <Command>
-      xcopy "..\Libraries\SDL2-2.26.1\lib\x64\*.DLL" "$(OutDir)" /y /D 
-      xcopy "..\Libraries\SDL2_image-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D 
-      xcopy "..\Libraries\SDL2_mixer-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D 
-      xcopy "..\Libraries\SDL2_ttf-2.20.1\lib\x64\*.DLL" "$(OutDir)" /y /D 
-      </Command>
+      <Command>xcopy "..\Libraries\SDL2-2.26.1\lib\x64\*.DLL" "$(OutDir)" /y /D
+xcopy "..\Libraries\SDL2_image-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D
+xcopy "..\Libraries\SDL2_mixer-2.6.2\lib\x64\*.DLL" "$(OutDir)" /y /D
+xcopy "..\Libraries\SDL2_ttf-2.20.1\lib\x64\*.DLL" "$(OutDir)" /y /D
+xcopy ".\Resources" "$(OutDir)Resources" /y /E /I /D</Command>
       <Message>COPY THE DLL FILES</Message>
     </PostBuildEvent>
     <ClCompile>
